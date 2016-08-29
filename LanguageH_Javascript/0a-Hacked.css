@@ -1,0 +1,13 @@
+BODY {background-color:#000000; color:#ffffaa;}
+
+A {color:#ffffaa;}
+
+A:visited {color:#aaaaff;}
+
+.PASS {color:#88ff88;}
+
+.FAIL {color:#ff8888;}
+
+LI.listitemTitle {font-weight:bold; color:#33aacc;}
+
+UL.listitemDescription {font-weight:normal; font-size:10pt; color:#ffffff;}
