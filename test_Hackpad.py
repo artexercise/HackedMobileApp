@@ -48,6 +48,39 @@ def test_Push_it():
     if not testitem_FunctionTest(H.Push_it, 0, []): return
     print("Passed: Push_it")
 
+def test_Max():
+    if not testitem_FunctionTest(H.Max, [3,8], 8): return
+    if not testitem_FunctionTest(H.Max, [3,1], 3): return
+    if not testitem_FunctionTest(H.Max, [0,99], 99): return
+    print("Passed: Max")
+
+def test_Maxxxx():
+    if not testitem_FunctionTest(H.Maxxxx, [3,1,8,0,2], 8): return
+    if not testitem_FunctionTest(H.Maxxxx, [1,3,2], 3): return
+    if not testitem_FunctionTest(H.Maxxxx, [9,42,7,13], 42): return
+    print("Passed: Maxxxx")
+
+def test_This_is_odd():
+    if not testitem_FunctionTest(H.This_is_odd, 5, 1): return
+    if not testitem_FunctionTest(H.This_is_odd, 7, 1): return
+    if not testitem_FunctionTest(H.This_is_odd, 2, 0): return
+    print("Passed: This_is_odd")
+
+def test_Panama():
+    if not testitem_FunctionTest(H.Panama, ['c','a','t'], False): return
+    if not testitem_FunctionTest(H.Panama, ['k','a','y','a','k'], True): return
+    if not testitem_FunctionTest(H.Panama, ['b','o','b'], True): return
+    print("Passed: Panama")
+    
+def test_Anagrams():
+    print("TODO: Anagrams")
+
+def test_Bring_some_ord():
+    print("TODO: Bring_some_ord")
+
+def test_Missing_numbers():
+    print("TODO: Missing_numbers")
+
 def testitem_FunctionTest(inFunc, inArg, outResult):
     try:
         assert inFunc(inArg)==outResult
