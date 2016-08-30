@@ -73,13 +73,22 @@ def test_Panama():
     print("Passed: Panama")
     
 def test_Anagrams():
-    print("TODO: Anagrams")
+    if not testitem_FunctionTest(H.Anagrams, [['d','a','d'],['a','d','d']], True): return
+    if not testitem_FunctionTest(H.Anagrams, [['a','t','e'],['e','a','t'],['t','e','a']], True): return
+    if not testitem_FunctionTest(H.Anagrams, [['n','o','t'],['o','n','e']], False): return
+    print("Passed: Anagrams")
 
 def test_Bring_some_ord():
-    print("TODO: Bring_some_ord")
+    if not testitem_FunctionTest(H.Bring_some_ord, ['c','b','a'],['a','b','c']): return
+    if not testitem_FunctionTest(H.Bring_some_ord, ['d','g','e','h','f'],['d','e','f','g','h']): return
+    if not testitem_FunctionTest(H.Bring_some_ord, ['z','x','y','w'],['w','x','y','z']): return
+    print("Passed: Bring_some_ord")
 
 def test_Missing_numbers():
-    print("TODO: Missing_numbers")
+    if not testitem_FunctionTest(H.Missing_numbers, [0,3,2], [1]): return
+    if not testitem_FunctionTest(H.Missing_numbers, [1,3], [0,2]): return
+    if not testitem_FunctionTest(H.Missing_numbers, [4,2,3], [0,1]): return
+    print("Passed: Missing_numbers")
 
 def testitem_FunctionTest(inFunc, inArg, outResult):
     try:
@@ -106,3 +115,7 @@ test_Max()
 test_Maxxxx()
 test_This_is_odd()
 test_Panama()
+
+test_Anagrams();
+test_Bring_some_ord();
+test_Missing_numbers();
