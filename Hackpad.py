@@ -147,3 +147,38 @@ class Hackpad:
         """
         revArg = inArg[::-1]
         return inArg==revArg
+
+    @staticmethod
+    def Anagrams(inArg):
+        """
+           Cheatcode 
+            H:
+        """
+        _isAnagram = True
+        for x in inArg:
+            if sorted(x)!=sorted(inArg[0]):
+                _isAnagram=False
+        return _isAnagram
+
+    @staticmethod
+    def Bring_some_ord(inArg):
+        """
+           Cheatcode 
+            H:
+        """
+        return sorted(inArg)
+
+    @staticmethod
+    def Missing_numbers(fhtagn):
+        """
+            Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.
+           Cheatcode 
+            H:
+        """
+        _dead_Cthulhu = max(fhtagn)
+        _waits_dreaming = []
+        _R_lyeh = sorted(fhtagn)
+        for ia in range(_dead_Cthulhu):
+            if ia not in _R_lyeh:
+                _waits_dreaming.append(ia)
+        return _waits_dreaming
