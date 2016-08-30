@@ -90,3 +90,60 @@ class Hackpad:
         """
         return range(inArg)
 
+    @staticmethod
+    def Max(inArg):
+        """
+           Jailbreak 
+            H:
+            var_a = 0;
+            foreach var_b in input {
+				if var_b > var_a {
+					var_a = var_b;
+				}
+            }
+            return var_a;
+        """
+        return max(inArg)
+
+    @staticmethod
+    def Maxxxx(inArg):
+        """
+           Jailbreak 
+            H:
+            var_a = 0;
+            foreach var_b in input {
+				var_a = max(var_a, var_b);
+            }
+        """
+        return max(inArg)
+
+    @staticmethod
+    def This_is_odd(inArg):
+        """
+           Jailbreak 
+            H:
+            var_a = input / 2;
+            var_b = var_a * 2;
+            var_c = input - var_b;
+        """
+        return inArg%2
+
+    @staticmethod
+    def Panama(inArg):
+        """
+           Jailbreak 
+            H:
+            var_a = input.length-1;
+            var_b = 0;
+            var_c = true;
+            foreach var_d in input {
+				if input[var_b] != inpuit[var_a] {
+					var_c=false;
+				}
+				var_a--;
+				var_b++;
+            }
+            return var_c;
+        """
+        revArg = inArg[::-1]
+        return inArg==revArg

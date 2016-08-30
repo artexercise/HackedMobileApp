@@ -101,3 +101,8 @@ test_Power()
 test_Power_2()
 test_Length()
 test_Push_it()
+
+test_Max()
+test_Maxxxx()
+test_This_is_odd()
+test_Panama()
