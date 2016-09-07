@@ -153,6 +153,11 @@ class Hackpad:
         """
            Cheatcode 
             H:
+            var_a = input[0].sort;
+            var_b = true;
+            foreach var_c in input {
+                var_b = (var_a == var_c.sort);
+            }
         """
         _isAnagram = True
         for x in inArg:
@@ -165,6 +170,22 @@ class Hackpad:
         """
            Cheatcode 
             H:
+            var_a = 0;
+            while var_a < input.length {
+                var_b = 0;
+                while var_b < input.length {
+                    if var_b > 0 {
+                        if input[var_b - 1] > input[var_b] {
+                            var_c = input[var_b];
+                            input[var_b] = input[var_b - 1];
+                            input[var_b - 1] = var_c;
+                        }
+                    }
+                    var_b++;
+                }
+                var_a++;
+            }
+            return input;
         """
         return sorted(inArg)
 
@@ -174,6 +195,27 @@ class Hackpad:
             Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.
            Cheatcode 
             H:
+            input.sort;
+            var_a = 0;
+            foreach var_b in input {
+                var_a = max(var_b, var_a);
+            }
+
+            var_b = 0;
+            var_c = [];
+            while var_b < var_a {
+                var_e = false;
+                foreach var_d in input {
+                    if var_b == var_d {
+                        var_e = true;
+                    }
+                }
+                if !var_e {
+                    var_c.push(var_b);
+                }
+                var_b++;
+            }
+            return var_c;
         """
         _dead_Cthulhu = max(fhtagn)
         _waits_dreaming = []
@@ -182,3 +224,107 @@ class Hackpad:
             if ia not in _R_lyeh:
                 _waits_dreaming.append(ia)
         return _waits_dreaming
+
+    @staticmethod
+    def X110101110101000101(inArg):
+        """
+           Corrupted 
+            H:
+        """
+	return True
+	
+    @staticmethod
+    def Prime(inArg):
+        """
+           Corrupted 
+            H:
+        """
+	return True
+	
+    @staticmethod
+    def Number_in_order(inArg):
+        """
+           Corrupted 
+            H:
+        """
+	return True
+	
+    @staticmethod
+    def Complete(inArg):
+        """
+           Cyber Attack 
+            H:
+        """
+	return True
+	
+    @staticmethod
+    def Match(inArg):
+        """
+           Cyber Attack 
+            H:
+        """
+	return True
+	
+    @staticmethod
+    def Rotate(inArg):
+        """
+           Cyber Attack 
+            H:
+        """
+	return True
+	
+    @staticmethod
+    def Add_one(inArg):
+        """
+           Nuclear Plant 
+            H:
+        """
+	return True
+	
+    @staticmethod
+    def Positivity(inArg):
+        """
+           Nuclear Plant 
+            H:
+        """
+	return True
+	
+    @staticmethod
+    def Nearest_to_origin(inArg):
+        """
+           Nuclear Plant 
+            H:
+        """
+	return True
+	
+    @staticmethod
+    def Addition(inArg):
+        """
+           Killer Robot 
+            H:
+        """
+	return True
+
+    @staticmethod
+    def Match_2(inArg):
+        """
+           Killer Robot 
+            H:
+        """
+	return True
+	
+    @staticmethod
+    def Tree(inArg):
+        """
+           Skynet 
+            H:
+        """
+	return True
+	
+    @staticmethod
+    def Draw(inArg):
+        """
+           Retirement
+            H:
+        """
+	return True
